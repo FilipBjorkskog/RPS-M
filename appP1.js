@@ -31,7 +31,6 @@ const db = getDatabase(app);
 
 
 onChildAdded(ref(db, "/"), function (data) {
-    console.log(data.key, data.val())
     // Check who made move
     if (data.key == "P1") {
         p1 = data.val()

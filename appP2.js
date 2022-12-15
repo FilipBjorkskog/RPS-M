@@ -30,7 +30,6 @@ let losses = 0
 let ties = 0
 
 onChildAdded(ref(db, "/"), function (data) {
-    console.log(data.key, data.val())
     // Check who made move
     if (data.key == "P1") {
         p1 = data.val()
